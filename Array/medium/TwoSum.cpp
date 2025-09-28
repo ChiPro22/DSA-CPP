@@ -13,6 +13,8 @@
         //     }
         // }
         // return {};
+        //Time complexity: O(n^2)
+        //Space complexity: O(1)
 
         //Better approach
         // unordered_map<int,int> mp; // value -> index
@@ -25,7 +27,12 @@
         //     mp[nums[i]] = i; // store index
         // }
         // return {};
+        //Time complexity: O(n)
+        //Space complexity: O(n)
 
+
+        //Optimal approach
+//         // sort the array and use 2 pointer approach
 //         int n=nums.size();
 //         vector<pair<int,int>>mp;
 //         for(int i=0;i<n;i++){
@@ -50,3 +57,6 @@
 //         return {};
 //     }
 // };
+
+//Time complexity: O(nlogn) + O(n) ~ O(nlogn)
+//Space complexity: O(n)
